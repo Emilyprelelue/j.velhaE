@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: h1;
+    src: url(/bunny_5/Bunny.otf);
+}
+
+body{
+    background-image: url(https://media.istockphoto.com/id/1308682666/vector/blue-gradient-soft-background.jpg?s=612x612&w=0&k=20&c=CBSD2BDe2uMi-Zm65ny6KoPKXsTPdk5K8wt_vMIb3Hc=);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jogo{
+    display: flex;
+    flex-direction: row;
+}
+
+h1{
+    text-align: center;
+    color: rgb(163, 255, 224);
+    font-family: h1;
+    font-size: 60px;
+}
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 130px);
+    grid-template-rows: repeat(3, 130px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.cell{
+    border: 3px solid #76ABAE;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 70px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 10px #000000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+img{
+    animation: img 3s alternate infinite linear;
+}
+
+.animation{
+    margin-left: 7%;
+}
+
+@keyframes img {
+    0%{
+        transform: translateY(0%);
+    }
+
+    50%{
+        transform: translateY(-25%);        
+    }
+
+    100%{
+        transform: translateY(25%);
+    }
+}
+
+footer{
+    margin-left: 42%;
+    color: white;
+    margin-top: 3%;
+}
